@@ -81,12 +81,14 @@ int main(int argc, char* args[]){
                             break;
 
                         }
+                        
+                        SDL_BlitSurface(gCurrentSurface,nullptr,gScreenSurface,nullptr);
+                        SDL_UpdateWindowSurface(gWindow);
 
                     }
 
             }
-            SDL_BlitSurface(gCurrentSurface,nullptr,gScreenSurface,nullptr);
-            SDL_UpdateWindowSurface(gWindow);
+
     }
 
     //Free resources and close SDL.
